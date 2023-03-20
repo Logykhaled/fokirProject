@@ -44,17 +44,16 @@ body{
     color:white;
     font-size: 26px;
     font-weight: 100;
-    border-right: 1px solid white;
+    border-right: .10em solid white;
+    white-space: nowrap; /* keep content on a single line*/
     width:200px;
     height: 40px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    animation-name: lineMove;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation: lineMove 1.5s  steps(10) infinite;
     animation-direction: alternate;
-   
+  
 }
 .nav{
     display: flex;
@@ -183,9 +182,7 @@ color: #FF305B;
     position: absolute;
     top:30px;
     left: 130px;
-  width: 360px;
-
-
+    width: 360px;
 }
 .layer{
     width: 360px;
@@ -227,7 +224,6 @@ color: #FF305B;
     text-transform: capitalize;
     padding-top: 80px;
     margin-bottom: 15px;
-   
 }
 
 .line1{
@@ -300,7 +296,9 @@ color: #FF305B;
 }
 
 
-
+.bio_list{
+    display: block;
+}
 .nav_portofolio ul{
     list-style: none;
     display: flex;
@@ -434,7 +432,8 @@ color: #FF305B;
 .video{
     width: 30%;
     background-color: #fff;
-margin: 10px;}
+    margin: 10px;
+}
 .video img{
     width: 100%;
     margin-bottom: 5px;
@@ -461,6 +460,10 @@ margin: 10px;}
 .video h3:hover{
     color: #FF305B;
 }
+iframe{
+    height: 230px;
+}
+
 .contact{
     margin: 20px;
     display: flex;
@@ -469,13 +472,13 @@ margin: 10px;}
    
 }
 .form1 input{
-    width: 380px;
+    width:398px;
     height: 40px;
     padding: 10px;
     border-radius: 0.3em;
     border: 1px solid #a94442;
     color: #555555;
-    margin-left: 28px;
+
 }
 .form2 input{
     width: 800px;
@@ -540,16 +543,267 @@ margin: 10px;}
 }
 @keyframes lineMove{
     0%{width:200px;}
-    10%{width: 210px;}
-    20%{width: 220px;}
-    30%{width: 230px;}
-    50%{width: 240px;}
-    60%{width: 250px;}
-    70%{width: 260px;}
-    80%{width: 270px;}
-    100%{width: 300px;}
+    10%{width: 212px;}
+    20%{width: 224px;}
+    30%{width: 236px;}
+    40%{width: 248px;}
+    50%{width: 260px;}
+    60%{width: 272px;}
+    70%{width: 284px;}
+    80%{width: 296px;}
+    90%{width: 308px;}
+    100%{width: 320px;}
 }
 
+@media screen and (max-width:576px) {
+    .logo
+    {
+        margin-right: 5px;
+        display: block;
+        margin-left:20px;
+        margin-bottom: 10px;
+    }
+    .nav{display: block;}
+    .links
+    {
+        padding: 10px 5px;
+    }
+    .backgrounddiv h1{
+        font-size: 40px;
+    }
+    
+   
+    .home{
+        width: 100%;
+    }
+    .bio{
+        width: 100%;
+        padding-left: 20px;  
+    }
+    .bio h2{
+        margin-top: 15px;
+    }
+    
+    .profileImg{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 5px;
+        margin: 0 15%;
+        
+    }
+    .about{
+        display: block;
+        height: 1000px;
+        
+    }
+    .image {
+        left: 0; 
+        top:0px;
+        width: 100%;
+        height: 350px;
+        
+      
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+       margin-left: 10px;
+    }
+  
+    .imgBorder{
+      display: none;
+    }
+    .layer{
+        width: 100%;
+        height: 350px;
+        left: 10px; 
+    }
+        .btn1,.btn2{
+            font-size: 16px;
+            margin-right: 2px;
+            padding: 5px 10px;
+            
+        }
+     
+        .bio ul{
+            line-height: 1.6em;
+        }
+        .bio h2{
+            font-size: 26px;
+        }
+        .bio p{
+            line-height: 1.2em;
+        }
+        .headline{
+            height: fit-content;
+            padding-top: 0;
+           margin-top: 15px;
+        }
+        .headline h1{
+            font-size: 30px;
+           padding-top: 20px;
+           padding-left: 25px;
+        }
+        .service_content{
+            display: block;
+            text-align: center;
+            height: fit-content; 
+        }
+        .service_details {
+           width: 80%;
+           margin: auto;
+           
+        }
+        .video p{
+            padding: 10px;
+        }
+        .video h3{
+            padding-left: 10px;
+        }
+        .service_details h1{
+             font-size: 20px;
+             margin-bottom: 5px;
+        }
+        .service_details p
+        {
+            line-height: 1em;
+        }
+      
+        .line2{
+            margin-left: 4%;
+        }
+        .project_gallery{
+            display: block;
+        }
+        .project{
+            width: 80%;
+           
+        }
+        .project img{
+            width:100%;
+        }
 
+        .nav_portofolio li{
+            font-size: 13px;
+        }
+        .feddback_container{
+            height: 500px; 
+            margin-top: 10px;
+        }
+        .feedback_text{
+            display: block;
+            left: 10px;
+            top:180px
+        }
+       
+        .videos{
+            display: block;
+            height: 1300px;
+        }
+        .video{
+            margin: auto;
+            width: 80%; 
+        }
+
+        .form1,.form2 input{
+            width: 250px;
+        }
+        .form1 input{
+            margin-left: 0;
+            width: 250px; 
+            margin-top: 10px;
+        }
+        .form2 input{
+            margin-top: 10px;
+        }
+        .form3 input{
+            width: 250px;
+            margin-top: 10px;
+        }
+        .contact{
+            margin: 0;
+        }
+        .send_btn{
+            margin-left: 110px;
+        }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .logo{
+        margin-right: 100px;
+    }
+    .imgBorder{
+        display: none;
+      }
+      .image {
+        left: 0; 
+        top:10px;
+        width: 100%;
+        height: 250px;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+    .layer{
+        width: 100%;
+        height: 250px;
+        left: 10px; 
+    }
+   
+    .profileImg{
+        height: 250px;
+        margin-right: 25px;
+    }
+    .about{
+        height: 700px;
+    }
+    .service_content{
+        flex-wrap: wrap;
+        height: fit-content; 
+    }
+    .service_details {
+        width:40%;
+        margin: auto;
+     }
+    
+    .project{
+        width: 40%;
+        margin: 25px;
+    }
+    .project img{
+        width:100%;
+    }
+    .feddback_container{
+        width: 80%;
+    }
+    .video{
+        width: 25%;
+    }
+    iframe{
+        height: 150px;
+    }
+    .video img{
+        height: 150px;
+    }
+    .form1 input{
+        margin-left: 0;
+        width: 350px; 
+        margin-top: 10px;
+    }
+    .form2 input{
+        margin-top: 10px;
+        width: 705px;
+    }
+    .form3 input{
+        margin-top: 10px;
+        width: 705px;
+    }
+    .send_btn{
+        margin-left: 280px;
+    }
+}
 
 
