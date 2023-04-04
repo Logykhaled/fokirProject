@@ -16,4 +16,4 @@ CSS
 # Acknowledgments
 This project was created as part of a web development course, and it is not affiliated with any real individual or organization. The content and images used in this project are for demonstration purposes only.
 
-#video demo
+
