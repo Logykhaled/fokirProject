@@ -2,7 +2,7 @@
 This is a front-end web development project for "Fokir", a fictional personal portfolio website. The project is built using HTML and CSS, and it aims to showcase a visually appealing and responsive website that highlights the portfolio and skills of the fictional designer, Fokir.
 
 # Getting Started
-To get started with this project, you can simply clone the repository and open the index.html file in your web browser. Alternatively, you can view the live version of the website here https://fokirtest.netlify.app.
+To get started with this project, you can simply clone the repository and open the index.html file in your web browser. Alternatively, you can view the live version of the website here https://fokirtest.netlify.app/
 
 # Prerequisites
 There are no prerequisites required to run this project, other than a modern web browser.
